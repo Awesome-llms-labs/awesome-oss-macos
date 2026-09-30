@@ -40,10 +40,11 @@ Thanks for helping keep this the most current directory of open-source macOS app
 
 Every PR runs:
 - **Link check** (lychee) over all markdown files — no dead links.
-- **JSON validation** — `data/oss-macos.json` must parse, every record must have the required fields, `category`/`status` must be from the allowed sets, and verified entries must carry an `https://` `source_url`.
+- **Data validation** — `data/oss-macos.json` must parse, every record must have the required fields, `category`/`status` must be from the allowed sets, and verified entries must carry an `https://` `source_url`.
+- **README sync check** — the README summary total and per-category counts must match the curated data file.
 
 Run locally before pushing:
 
 ```bash
-python3 -c "import json; json.load(open('data/oss-macos.json')); print('ok')"
+python3 scripts/validate_data.py
 ```
