@@ -1,39 +1,49 @@
-# Contributing to Awesome OSS macOS
+# Contributing
 
-Thanks for helping keep this list honest and useful. A few rules before you open a PR:
+Thanks for helping keep this the most current directory of open-source macOS apps!
 
-## What belongs here
+## Adding an entry
 
-- **Genuinely open-source macOS apps or utilities** — source must be publicly available under a recognized open-source license (MIT, Apache-2.0, GPL, BSD, MPL, …).
-- **macOS-first or with a real macOS build** — cross-platform tools count only if macOS is a first-class target (native build, not "runs under X11 maybe").
-- **No proprietary software.** Raycast, Alfred, Bartender, CleanMyMac, iStat Menus, Shottr, AppCleaner, OrbStack, Warp, Arc — proprietary, out of scope. No "freemium with an OSS core that can't actually be built" either.
-- **No abandonware with no source.** If the repo is gone or private, the entry goes to `docs/status-changes.md` instead.
-- **No vaporware.** Announced-but-unshipped projects are excluded until a public repo exists.
+1. **Check it fits:** an **open-source** application or system tool that runs on macOS — native (Swift/SwiftUI, Objective-C), Electron/Tauri where macOS is first-class, or a terminal tool macOS users rely on. Excluded: iOS-only apps, proprietary freeware ("free but closed"), source-available-but-restricted licenses (SSPL, BSL, custom "community" licenses), and repos that no longer exist.
+2. **Verify the license yourself.** Open the repo's LICENSE file (or the license badge on its GitHub page) and confirm the SPDX identifier. **Never invent a license.** If you can't confirm it, set `license` to `"unverified"` and `oss_verified` to `false`.
+3. **Add to the right section** of `README.md` (categories: developer-tools, productivity, utilities, media, design, security-privacy, terminal-system, notes-knowledge, communication, browsers).
+4. **One entry = one bullet.** Format:
+   `- [Name](https://github.com/owner/repo) — ` one-line description.
+   Mark license confidence honestly: `✅ MIT (verified)` only when you confirmed the license on the official repo; otherwise `⚠️ license unverified`.
+5. **Add the matching record** to `data/oss-macos.json` with these exact fields:
 
-## Entry requirements
+| field | type | values |
+|---|---|---|
+| `name` | string | app name |
+| `repo_url` | string | `https://github.com/owner/repo` |
+| `homepage` | string | official `https://` site, or `""` |
+| `description` | string | one sentence |
+| `license` | string | SPDX id (e.g. `"MIT"`, `"GPL-3.0"`, `"Apache-2.0"`), or `"unverified"` |
+| `category` | string | one of the 10 categories above |
+| `macos_native` | bool | `true` for native Swift/ObjC/AppKit apps |
+| `last_commit_verified` | bool | `true` only if you checked the repo's recent commit activity |
+| `oss_verified` | bool | `true` only if you confirmed the license on the official repo |
+| `source_url` | string | `https://` URL proving the license (repo page or LICENSE file), or `""` |
+| `status` | string | `active` / `maintenance` / `archived` |
 
-Every entry in `data/macos.json` needs:
+6. **Status changes:** if a project is archived, goes quiet for 2+ years, or changes license, update its README entry *and* its JSON record (`status`, and `license`/`oss_verified` if the license changed).
 
-| Field | Rule |
-|---|---|
-| `name` | Exact project name |
-| `description` | 1–2 sentences, neutral, no marketing fluff |
-| `license` | The SPDX-style license **as stated in the repo's LICENSE file** — checked, not assumed |
-| `category` | One of the categories in the CI validator |
-| `github_url` | `https://github.com/owner/repo` |
-| `stars` | Integer star count **as of the day you check it**, or `null` |
-| `official_site` | Project homepage, or `null` |
-| `apple_silicon` | `"universal binary"`, `"Apple Silicon native"`, `"Intel via Rosetta 2"`, or `null` if unknown — never guessed |
-| `verified` | `true` **only** if you confirmed the project on its official GitHub repo page or official site. Otherwise `false` with… |
-| `unverified_reason` | …a plain-English reason. "Could not confirm license on official source" beats a wrong license every time |
+## Style rules
 
-## How to submit
+- Link the **official repo** (`https://github.com/owner/repo`), never a blog post, reseller, or repackaged download.
+- Descriptions are one sentence, neutral, and macOS-relevant ("menu-bar calendar", " tiling window manager").
+- Facts that can change (version numbers, feature lists) are omitted — link the repo instead of hard-coding details that rot.
+- Proprietary lookalikes (Raycast, Alfred, Bartender, Magnet, 1Password, Obsidian, Warp, Arc, Little Snitch, …) do **not** get entries. Suggest the OSS alternative instead.
+- Privacy-relevant facts (network access, telemetry) must be sourced.
 
-1. Add the entry to `data/macos.json` (keep alphabetical order within its category in `README.md`).
-2. Add the matching bullet to `README.md` in the right category section.
-3. If the entry replaces or retires an old one, note it in `docs/status-changes.md`.
-4. Open a PR. CI runs lychee link checks and JSON validation — both must be green.
+## CI
 
-## Honesty policy
+Every PR runs:
+- **Link check** (lychee) over all markdown files — no dead links.
+- **JSON validation** — `data/oss-macos.json` must parse, every record must have the required fields, `category`/`status` must be from the allowed sets, and verified entries must carry an `https://` `source_url`.
 
-This repo's whole value is the ✅/⚠️ flags. If the official page is ambiguous, the entry says so. Unverified is a feature, not a failure.
+Run locally before pushing:
+
+```bash
+python3 -c "import json; json.load(open('data/oss-macos.json')); print('ok')"
+```

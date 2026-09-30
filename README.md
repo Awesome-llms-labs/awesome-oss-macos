@@ -1,216 +1,181 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated directory of **genuinely open-source macOS apps and utilities** — window managers, terminals, media tools, security utilities, dev tools and more — as of **September 2026**.
+A curated list of **80 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
 
-"Open source" here means the source is publicly available under a recognized open-source license (MIT, Apache-2.0, GPL, BSD, MPL, …). Proprietary freeware — however good — is deliberately out of scope: no Raycast, Alfred, Bartender, CleanMyMac, iStat Menus, Shottr, AppCleaner, OrbStack, Warp, or Arc.
-
-**Verification confidence:** every entry is stamped ✅ **verified** (facts confirmed on the project's official GitHub repo page or official site) or ⚠️ **unverified** (something could not be confirmed — the entry says what). **Numbers are never guessed** — star counts are snapshots from the verification pass and Apple Silicon notes are omitted when unknown. Machine-readable records live in [`data/macos.json`](data/macos.json) with a `verified` boolean per entry. **93 of 93 entries verified** (0 flagged unverified with reasons) — all checks 2026-09-30.
-
-## 2026 Highlights
-
-- **Tiling on the Mac keeps maturing:** AeroSpace, yabai, Amethyst and Rectangle cover everything from i3-style tiling to simple keyboard snapping. Note yabai needs SIP partially disabled — decide if that trade-off is worth it for you.
-- **Objective-See's free security suite** (LuLu firewall, KnockKnock, BlockBlock, RansomWhere, TaskExplorer) remains the open baseline for Mac security tooling.
-- **Terminal choice is now about config language:** iTerm2 is the veteran; Alacritty, Kitty, Ghostty and WezTerm are GPU-accelerated and configured in files, not preference panes.
-- **Homebrew is still the default package manager**; MacPorts is the older, more BSD-flavored alternative. Don't run both.
-- **Apple Silicon-native builds are the norm** for maintained projects — entries note universal/ARM64 status where the project states it; Intel-only builds still run under Rosetta 2.
+- ✅ **80/80** licenses verified from official sources
+- 🍎 **27** native macOS apps (AppKit/Swift/Objective-C)
+- 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
 
-- [Window managers & tiling](#window-managers-tiling)
-- [Launchers](#launchers)
-- [Clipboard managers](#clipboard-managers)
-- [Screenshot & recording](#screenshot-recording)
-- [Terminal emulators](#terminal-emulators)
-- [Editors & IDEs](#editors-ides)
-- [Developer tools](#developer-tools)
-- [Package managers & automation](#package-managers-automation)
-- [Media players](#media-players)
-- [Video & image tools](#video-image-tools)
-- [Audio tools](#audio-tools)
-- [Streaming & capture](#streaming-capture)
-- [System utilities](#system-utilities)
-- [Menu bar tools](#menu-bar-tools)
-- [Backup & sync](#backup-sync)
-- [Security](#security)
-- [Productivity](#productivity)
-- [Accessibility](#accessibility)
-- [Browsers](#browsers)
-- [Miscellaneous](#miscellaneous)
-- [Guides](#guides)
-- [Related repositories](#related-repositories)
+- [🛠️ Developer Tools](#developer-tools) (8)
+- [⚡ Productivity](#productivity) (7)
+- [🧰 Utilities](#utilities) (9)
+- [🎬 Media](#media) (10)
+- [🎨 Design](#design) (8)
+- [🔒 Security & Privacy](#security-privacy) (8)
+- [💻 Terminal & System](#terminal-system) (12)
+- [📝 Notes & Knowledge](#notes-knowledge) (6)
+- [💬 Communication](#communication) (6)
+- [🌐 Browsers](#browsers) (6)
+- [Notable exclusions](#notable-exclusions)
 - [Contributing](#contributing)
 - [License](#license)
 
----
+## 🛠️ Developer Tools
 
-## Window managers & tiling
+Editors, package managers, database GUIs, and dev utilities.
 
-- [AeroSpace](https://github.com/nikitabobko/AeroSpace) — ✅ verified. i3-like tiling window manager for macOS. License: `MIT`. ★ ~23.3k. [Official site](https://nikitabobko.github.io/AeroSpace/guide)
-- [AltTab](https://github.com/lwouis/alt-tab-macos) — ✅ verified. Windows-style alt-tab window switcher for macOS. License: `GPL-3.0-only`. ★ ~16.3k. [Official site](https://alt-tab.app)
-- [Amethyst](https://github.com/ianyh/Amethyst) — ✅ verified. Automatic tiling window manager for macOS in the spirit of xmonad. License: `MIT`. ★ ~16.3k. [Official site](https://ianyh.com/amethyst/)
-- [Loop](https://github.com/MrKai77/Loop) — ✅ verified. Elegant window management via a radial menu under your cursor. License: `GPL-3.0-only`. ★ ~11.7k.
-- [Rectangle](https://github.com/rxhanson/Rectangle) — ✅ verified. Move and resize windows on macOS with keyboard shortcuts and snap areas. License: `MIT`. ★ ~30k. [Official site](https://rectangleapp.com)
-- [yabai](https://github.com/koekeishiya/yabai) — ✅ verified. Tiling window manager for macOS based on binary space partitioning. License: `MIT`. ★ ~29.7k.
+- **[Homebrew](https://github.com/Homebrew/brew)** — The missing package manager for macOS. [`BSD-2-Clause`](https://github.com/Homebrew/brew) · [website](https://brew.sh)
+- **[Visual Studio Code](https://github.com/microsoft/vscode)** — Free, extensible code editor with a huge extension marketplace. [`MIT`](https://github.com/microsoft/vscode) · [website](https://code.visualstudio.com)
+- **[Zed](https://github.com/zed-industries/zed)** — Blazing-fast, GPU-accelerated code editor with built-in collaboration. [`GPL-3.0`](https://github.com/zed-industries/zed/blob/HEAD/LICENSE-GPL) · [website](https://zed.dev)
+- **[Neovim](https://github.com/neovim/neovim)** — Hyperextensible Vim-based editor with Lua config and built-in LSP. [`Apache-2.0`](https://github.com/neovim/neovim/blob/HEAD/LICENSE.txt) · [website](https://neovim.io)
+- **[GitUp](https://github.com/git-up/GitUp)** 🍎 — Native Mac Git client with a live, interactive repository graph. [`GPL-3.0`](https://github.com/git-up/GitUp) · [website](https://gitup.co)
+- **[DBeaver](https://github.com/dbeaver/dbeaver)** — Universal database GUI for MySQL, Postgres, SQLite, and dozens more. [`Apache-2.0`](https://github.com/dbeaver/dbeaver) · [website](https://dbeaver.io)
+- **[Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace)** 🍎 — Native Mac MySQL/MariaDB client, successor to Sequel Pro. [`MIT`](https://github.com/Sequel-Ace/Sequel-Ace/blob/HEAD/LICENSE) · [website](https://sequel-ace.com)
+- **[CotEditor](https://github.com/coteditor/CotEditor)** 🍎 — Lightweight native Mac plain-text editor for code and prose. [`Apache-2.0`](https://github.com/coteditor/CotEditor/blob/HEAD/LICENSE) · [website](https://coteditor.com)
 
-## Launchers
+## ⚡ Productivity
 
-- [Cerebro](https://github.com/cerebroapp/cerebro) — ✅ verified. Open-source launcher to improve productivity and efficiency. License: `MIT`. ★ ~8.6k. [Official site](https://www.cerebroapp.com/)
-- [Zazu](https://github.com/tinytacoteam/zazu) — ✅ verified. Fully extensible open-source launcher for hackers and creators. (Repository archived; last updated 2019.). License: `MIT`. ★ ~2.1k. [Official site](http://zazuapp.org)
+Window management, clipboard managers, automation, and text expansion.
 
-## Clipboard managers
+- **[Rectangle](https://github.com/rxhanson/Rectangle)** 🍎 — Move and resize windows with keyboard shortcuts and snap areas. [`MIT`](https://github.com/rxhanson/Rectangle/blob/HEAD/LICENSE) · [website](https://rectangleapp.com)
+- **[AltTab](https://github.com/lwouis/alt-tab-macos)** 🍎 — Windows-style Alt-Tab switcher with live window thumbnails. [`GPL-3.0`](https://github.com/lwouis/alt-tab-macos) · [website](https://alt-tab.app)
+- **[Loop](https://github.com/mrkai77/Loop)** 🍎 — Window management via a radial menu under your cursor. [`GPL-3.0`](https://github.com/mrkai77/Loop) · [website](https://github.com/mrkai77/Loop)
+- **[Maccy](https://github.com/p0deje/Maccy)** 🍎 — Lightweight clipboard manager with search and keyboard-first paste. [`MIT`](https://github.com/p0deje/Maccy) · [website](https://maccy.app)
+- **[Flycut](https://github.com/TermiT/Flycut)** 🍎 — Simple open-source clipboard manager for developers. [`MIT`](https://github.com/TermiT/Flycut) · [website](https://github.com/TermiT/Flycut)
+- **[Espanso](https://github.com/espanso/espanso)** — Cross-platform text expander with snippets, forms, and scripting. [`GPL-3.0`](https://github.com/espanso/espanso) · [website](https://espanso.org)
+- **[Hammerspoon](https://github.com/Hammerspoon/hammerspoon)** 🍎 — Automate macOS with Lua: window management, hotkeys, system scripting. [`MIT`](https://github.com/Hammerspoon/hammerspoon) · [website](https://www.hammerspoon.org)
 
-- [CopyQ](https://github.com/hluk/copyq) — ✅ verified. Clipboard manager with advanced features. License: `GPL-3.0-only`. ★ ~12.3k.
-- [Maccy](https://github.com/p0deje/Maccy) — ✅ verified. Lightweight clipboard manager for macOS. License: `MIT`. ★ ~21.8k. [Official site](https://maccy.app)
+## 🧰 Utilities
 
-## Screenshot & recording
+Menu-bar tools, system tweaks, input customization, and archivers.
 
-- [Flameshot](https://github.com/flameshot-org/flameshot) — ✅ verified. Powerful yet simple screenshot software with annotation tools. License: `GPL-3.0-only`. ★ ~31k. [Official site](https://flameshot.org)
-- [Kap](https://github.com/wulkano/Kap) — ✅ verified. Open-source screen recorder built with web technology. License: `MIT`. ★ ~19.4k. [Official site](https://getkap.co)
-- [ksnip](https://github.com/ksnip/ksnip) — ✅ verified. Cross-platform screenshot and annotation tool. License: `GPL-3.0-only`. ★ ~3.3k.
+- **[Stats](https://github.com/exelban/stats)** 🍎 — Menu-bar system monitor: CPU, memory, disks, network, sensors, battery. [`MIT`](https://github.com/exelban/stats/blob/HEAD/LICENSE) · [website](https://mac-stats.com)
+- **[Hidden Bar](https://github.com/dwarvesf/hidden)** 🍎 — Hide menu-bar icons behind a toggleable separator. [`MIT`](https://github.com/dwarvesf/hidden) · [website](https://d.foundation/opensource)
+- **[Ice](https://github.com/jordanbaird/Ice)** 🍎 *(maintenance)* — Powerful menu-bar manager: hide icons, reorder, multiple bars. [`GPL-3.0`](https://github.com/jordanbaird/Ice) · [website](https://icemenubar.app)
+- **[MonitorControl](https://github.com/MonitorControl/MonitorControl)** 🍎 — Control external display brightness/volume with native OSD. [`MIT`](https://github.com/MonitorControl/MonitorControl) · [website](https://monitorcontrol.app)
+- **[PeaZip](https://github.com/giorgiotani/PeaZip)** — Free archiver supporting 200+ formats, with encryption. [`LGPL-3.0`](https://github.com/giorgiotani/PeaZip) · [website](https://peazip.github.io)
+- **[LinearMouse](https://github.com/linearmouse/linearmouse)** 🍎 — Per-device mouse/trackpad customization: scroll, speed, buttons. [`MIT`](https://github.com/linearmouse/linearmouse) · [website](https://linearmouse.app)
+- **[Finicky](https://github.com/johnste/finicky)** 🍎 — Route URLs to different browsers based on rules you define. [`MIT`](https://github.com/johnste/finicky) · [website](https://github.com/johnste/finicky)
+- **[KeyCastr](https://github.com/keycastr/keycastr)** 🍎 — Display keystrokes on screen — great for screencasts and demos. [`BSD-3-Clause`](https://github.com/keycastr/keycastr) · [website](https://github.com/keycastr/keycastr)
+- **[Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements)** 🍎 — Remap keys, build complex modifications, customize input devices. [`Unlicense`](https://github.com/pqrs-org/Karabiner-Elements) · [website](https://karabiner-elements.pqrs.org/)
 
-## Terminal emulators
+## 🎬 Media
 
-- [Alacritty](https://github.com/alacritty/alacritty) — ✅ verified. Cross-platform, OpenGL terminal emulator. License: `Apache-2.0`. ★ ~65.9k. [Official site](https://alacritty.org)
-- [Ghostty](https://github.com/ghostty-org/ghostty) — ✅ verified. Fast, feature-rich, GPU-accelerated terminal emulator with native UI. License: `MIT`. ★ ~61.7k. [Official site](https://ghostty.org)
-- [iTerm2](https://github.com/gnachman/iTerm2) — ✅ verified. Feature-rich terminal emulator for macOS. License: `GPL-2.0-only`. ★ ~18.1k. [Official site](https://iterm2.com/)
-- [kitty](https://github.com/kovidgoyal/kitty) — ✅ verified. Fast, feature-rich, GPU-based terminal emulator. License: `GPL-3.0-only`. ★ ~35.1k. [Official site](https://sw.kovidgoyal.net/kitty/)
-- [Tabby](https://github.com/Eugeny/tabby) — ✅ verified. Modern, highly customizable terminal for the modern age. License: `MIT`. ★ ~74.8k. [Official site](https://tabby.sh)
-- [WezTerm](https://github.com/wez/wezterm) — ✅ verified. GPU-accelerated cross-platform terminal emulator and multiplexer written in Rust. License: `MIT`. ★ ~29.1k. [Official site](https://wezterm.org/)
+Players, editors, converters, and audio/video tooling.
 
-## Editors & IDEs
+- **[IINA](https://github.com/iina/iina)** 🍎 — Modern native Mac media player built on mpv. [`GPL-3.0`](https://github.com/iina/iina) · [website](https://iina.io)
+- **[VLC](https://github.com/videolan/vlc)** — The ubiquitous plays-everything media player. [`GPL-2.0`](https://github.com/videolan/vlc) · [website](https://www.videolan.org/vlc)
+- **[mpv](https://github.com/mpv-player/mpv)** — Minimal, scriptable, high-quality media player and library. [`GPL-2.0`](https://github.com/mpv-player/mpv/blob/HEAD/LICENSE.GPL) · [website](https://mpv.io)
+- **[HandBrake](https://github.com/HandBrake/HandBrake)** — Convert video between formats, with presets for every device. [`GPL-2.0`](https://github.com/HandBrake/HandBrake/blob/HEAD/LICENSE) · [website](https://handbrake.fr)
+- **[OBS Studio](https://github.com/obsproject/obs-studio)** — Free live-streaming and screen-recording studio. [`GPL-2.0`](https://github.com/obsproject/obs-studio) · [website](https://obsproject.com)
+- **[Audacity](https://github.com/audacity/audacity)** — Multi-track audio recording and editing. [`GPL-3.0`](https://github.com/audacity/audacity/blob/HEAD/LICENSE.txt) · [website](https://www.audacityteam.org)
+- **[LosslessCut](https://github.com/mifi/lossless-cut)** — Losslessly trim video/audio without re-encoding. [`GPL-2.0`](https://github.com/mifi/lossless-cut/blob/HEAD/LICENSE) · [website](https://losslesscut.app/)
+- **[BlackHole](https://github.com/ExistentialAudio/BlackHole)** 🍎 — Virtual audio driver to route audio between apps. [`GPL-3.0`](https://github.com/ExistentialAudio/BlackHole/blob/HEAD/LICENSE) · [website](https://existential.audio/blackhole/)
+- **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** — Swiss-army knife of audio/video conversion and streaming (CLI). [`LGPL-2.1`](https://github.com/FFmpeg/FFmpeg/blob/HEAD/LICENSE.md) · [website](https://ffmpeg.org)
+- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** — Download video and audio from hundreds of sites (CLI). [`Unlicense`](https://github.com/yt-dlp/yt-dlp) · [website](https://github.com/yt-dlp/yt-dlp)
 
-- [CotEditor](https://github.com/coteditor/CotEditor) — ✅ verified. Lightweight plain-text editor for macOS. (Source code Apache-2.0; bundled image resources CC BY-NC-ND 4.0.). License: `Apache-2.0`. ★ ~8.5k. [Official site](https://coteditor.com)
-- [MacVim](https://github.com/macvim-dev/macvim) — ✅ verified. Vim, the text editor, as a native macOS app. License: `Vim`. ★ ~7.9k. [Official site](https://macvim.org)
-- [TextMate](https://github.com/textmate/textmate) — ✅ verified. Graphical text editor for macOS. License: `GPL-3.0-only`. ★ ~14.6k. [Official site](https://macromates.com/)
-- [Visual Studio Code](https://github.com/microsoft/vscode) — ✅ verified. Extensible, open-source code editor. (Microsoft's official branded builds add proprietary components.). License: `MIT`. ★ ~193.3k. [Official site](https://code.visualstudio.com)
-- [Zed](https://github.com/zed-industries/zed) — ✅ verified. High-performance, multiplayer code editor from the creators of Atom and Tree-sitter. License: `GPL-3.0-or-later`. ★ ~91.1k. [Official site](https://zed.dev)
+## 🎨 Design
 
-## Developer tools
+3D, image editing, CAD, photography, and diagramming.
 
-- [Boop](https://github.com/IvanMathy/Boop) — ✅ verified. Scriptable scratchpad for developers. License: `MIT`. ★ ~4.2k. [Official site](https://boop.okat.best)
-- [Bruno](https://github.com/usebruno/bruno) — ✅ verified. Open-source IDE for exploring and testing APIs; lightweight Postman/Insomnia alternative. License: `MIT`. ★ ~47.3k. [Official site](https://www.usebruno.com/)
-- [GitUp](https://github.com/git-up/GitUp) — ✅ verified. Fast, visual Git client for macOS. License: `GPL-3.0-only`. ★ ~12.1k. [Official site](http://gitup.co)
-- [Platypus](https://github.com/sveinbjornt/Platypus) — ✅ verified. Create native macOS applications from command-line scripts. License: `BSD-3-Clause`. ★ ~3.5k. [Official site](https://sveinbjorn.org/platypus)
-- [Sequel Ace](https://github.com/Sequel-Ace/Sequel-Ace) — ✅ verified. MySQL/MariaDB database management for macOS. License: `MIT`. ★ ~7.5k. [Official site](https://sequel-ace.com)
-- [Sparkle](https://github.com/sparkle-project/Sparkle) — ✅ verified. Software update framework for macOS apps. License: `MIT`. ★ ~9.8k. [Official site](https://sparkle-project.org)
+- **[Blender](https://github.com/blender/blender)** — Full 3D creation suite: modeling, animation, rendering, VFX. [`GPL-2.0`](https://github.com/blender/blender/blob/HEAD/doc/license/GPL-license.txt) · [website](https://www.blender.org)
+- **[GIMP](https://github.com/GNOME/gimp)** — GNU Image Manipulation Program — raster graphics editing. [`GPL-3.0`](https://github.com/GNOME/gimp/blob/HEAD/COPYING) · [website](https://www.gimp.org)
+- **[LibreCAD](https://github.com/LibreCAD/LibreCAD)** — 2D CAD application for technical drawing. [`GPL-2.0`](https://github.com/LibreCAD/LibreCAD/blob/HEAD/LICENSE) · [website](https://librecad.org/)
+- **[Krita](https://github.com/KDE/krita)** — Digital painting studio for illustrators and concept artists. [`GPL-3.0`](https://github.com/KDE/krita) · [website](https://krita.org)
+- **[darktable](https://github.com/darktable-org/darktable)** — Photography workflow and RAW developer. [`GPL-3.0`](https://github.com/darktable-org/darktable) · [website](https://www.darktable.org)
+- **[RawTherapee](https://github.com/RawTherapee/RawTherapee)** — Cross-platform RAW photo processor. [`GPL-3.0`](https://github.com/RawTherapee/RawTherapee) · [website](https://rawtherapee.com)
+- **[draw.io Desktop](https://github.com/jgraph/drawio-desktop)** — Offline diagramming and whiteboarding app. [`GPL-3.0`](https://github.com/jgraph/drawio-desktop) · [website](https://www.diagrams.net)
+- **[FreeCAD](https://github.com/FreeCAD/FreeCAD)** — Parametric 3D CAD modeler for product design and engineering. [`LGPL-2.1`](https://github.com/FreeCAD/FreeCAD) · [website](https://www.freecad.org)
 
-## Package managers & automation
+## 🔒 Security & Privacy
 
-- [Homebrew](https://github.com/Homebrew/brew) — ✅ verified. The package manager for macOS (and Linux). License: `BSD-2-Clause`. ★ ~49.8k. [Official site](https://brew.sh)
-- [MacPorts](https://github.com/macports/macports-base) — ✅ verified. Package manager providing a large collection of open-source ports for macOS. License: `BSD-3-Clause`. ★ ~1k. [Official site](https://trac.macports.org)
-- [mas](https://github.com/mas-cli/mas) — ✅ verified. Mac App Store command-line interface. License: `MIT`. ★ ~12.4k.
-- [nix-darwin](https://github.com/LnL7/nix-darwin) — ✅ verified. Manage your macOS system configuration using Nix. License: `MIT`. ★ ~6k. [Official site](https://nix-darwin.org)
+Password managers, firewalls, and system integrity tools.
 
-## Media players
+- **[Bitwarden](https://github.com/bitwarden/clients)** — Open-source password manager with end-to-end encryption. [`GPL-3.0`](https://github.com/bitwarden/clients/blob/HEAD/LICENSE.txt) · [website](https://bitwarden.com)
+- **[KeePassXC](https://github.com/keepassxreboot/keepassxc)** — Offline password manager with strong encryption, no cloud needed. [`GPL-2.0-or-later`](https://github.com/keepassxreboot/keepassxc/blob/HEAD/COPYING) · [website](https://keepassxc.org)
+- **[Santa](https://github.com/google/santa)** 🍎 *(maintenance)* — Google's binary allow/denylist system for macOS. [`Apache-2.0`](https://github.com/google/santa) · [website](https://santa.dev)
+- **[LuLu](https://github.com/objective-see/LuLu)** 🍎 — Free macOS firewall alerting on unknown outgoing connections. [`GPL-3.0`](https://github.com/objective-see/LuLu) · [website](https://objective-see.org/products/lulu.html)
+- **[KnockKnock](https://github.com/objective-see/KnockKnock)** 🍎 — See what persists on your Mac: launch items, extensions, plugins. [`GPL-3.0`](https://github.com/objective-see/KnockKnock) · [website](https://objective-see.org/products/knockknock.html)
+- **[BlockBlock](https://github.com/objective-see/BlockBlock)** 🍎 — Monitor persistence locations and block malware persistence. [`GPL-3.0`](https://github.com/objective-see/BlockBlock) · [website](https://objective-see.org/products/blockblock.html)
+- **[Wireshark](https://github.com/wireshark/wireshark)** — Network protocol analyzer for deep packet inspection. [`GPL-2.0`](https://github.com/wireshark/wireshark) · [website](https://www.wireshark.org)
+- **[WireGuard](https://github.com/WireGuard/wireguard-apple)** 🍎 *(maintenance)* — Fast, modern VPN protocol with an official Apple-platform app. [`MIT`](https://github.com/WireGuard/wireguard-apple) · [website](https://www.wireguard.com)
 
-- [IINA](https://github.com/iina/iina) — ✅ verified. Modern video player for macOS built on mpv. License: `GPL-3.0-only`. ★ ~46.5k. [Official site](https://iina.io)
-- [mpv](https://github.com/mpv-player/mpv) — ✅ verified. Minimal, scriptable command-line media player. License: `GPL-2.0-or-later`. ★ ~37.2k. [Official site](https://mpv.io)
-- [VLC](https://github.com/videolan/vlc) — ✅ verified. Free media player that plays almost everything. License: `GPL-2.0-only`. ★ ~19.8k. [Official site](http://www.videolan.org/vlc)
+## 💻 Terminal & System
 
-## Video & image tools
+Terminals, shells, tiling window managers, and CLI power tools.
 
-- [Audacity](https://github.com/audacity/audacity) — ✅ verified. Free, open-source audio editor and recorder. License: `GPL-3.0-only`. ★ ~18.6k. [Official site](https://wiki.audacityteam.org/wiki/For_Developers)
-- [Gifski](https://github.com/sindresorhus/Gifski) — ✅ verified. Convert videos to high-quality GIFs on your Mac. License: `MIT`. ★ ~8.6k. [Official site](https://sindresorhus.com/gifski)
-- [HandBrake](https://github.com/HandBrake/HandBrake) — ✅ verified. Open-source video transcoder. License: `GPL-2.0-only`. ★ ~24.5k. [Official site](https://handbrake.fr)
-- [LosslessCut](https://github.com/mifi/lossless-cut) — ✅ verified. Swiss army knife of lossless video and audio editing. License: `GPL-2.0-only`. ★ ~44.2k. [Official site](https://losslesscut.app/)
-- [Picard](https://github.com/metabrainz/picard) — ✅ verified. Cross-platform music tagger powered by the MusicBrainz database. License: `GPL-2.0-only`. ★ ~5.2k. [Official site](https://picard.musicbrainz.org)
-- [Shotcut](https://github.com/mltframework/shotcut) — ✅ verified. Cross-platform, open-source video editor. License: `GPL-3.0-only`. ★ ~15.3k. [Official site](https://www.shotcut.org)
-- [Subler](https://github.com/sublerapp/subler) — ✅ verified. MP4 muxer and metadata editor for macOS. License: `GPL-2.0-only`. ★ ~250. [Official site](https://subler.org)
+- **[iTerm2](https://github.com/gnachman/iTerm2)** 🍎 — Feature-rich native Mac terminal with tmux integration and Python API. [`GPL-2.0`](https://github.com/gnachman/iTerm2) · [website](https://iterm2.com/)
+- **[Alacritty](https://github.com/alacritty/alacritty)** — GPU-accelerated, minimal terminal emulator. [`Apache-2.0`](https://github.com/alacritty/alacritty) · [website](https://alacritty.org)
+- **[Kitty](https://github.com/kovidgoyal/kitty)** — GPU-based terminal with graphics protocol, tabs, extensibility. [`GPL-3.0`](https://github.com/kovidgoyal/kitty) · [website](https://sw.kovidgoyal.net/kitty/)
+- **[WezTerm](https://github.com/wezterm/wezterm)** — GPU-accelerated terminal with multiplexing built in. [`MIT`](https://github.com/wezterm/wezterm/blob/HEAD/LICENSE.md) · [website](https://wezterm.org)
+- **[Ghostty](https://github.com/ghostty-org/ghostty)** — Fast native-feeling terminal focused on simplicity. [`MIT`](https://github.com/ghostty-org/ghostty) · [website](https://ghostty.org)
+- **[Yabai](https://github.com/asmvik/yabai)** 🍎 — Tiling window manager for macOS — scriptable and fast. [`MIT`](https://github.com/asmvik/yabai) · [website](https://github.com/asmvik/yabai)
+- **[Amethyst](https://github.com/ianyh/Amethyst)** 🍎 — Automatic tiling window manager with multiple layouts. [`MIT`](https://github.com/ianyh/Amethyst) · [website](https://ianyh.com/amethyst/)
+- **[Starship](https://github.com/starship/starship)** — Minimal, fast, customizable shell prompt for any shell. [`ISC`](https://github.com/starship/starship) · [website](https://starship.rs)
+- **[fzf](https://github.com/junegunn/fzf)** — Fuzzy finder for the command line: files, history, processes. [`MIT`](https://github.com/junegunn/fzf) · [website](https://junegunn.github.io/fzf/)
+- **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Blazing-fast recursive search — a modern grep. [`Unlicense`](https://github.com/BurntSushi/ripgrep) · [website](https://github.com/BurntSushi/ripgrep)
+- **[lazygit](https://github.com/jesseduffield/lazygit)** — Terminal UI for Git with keyboard-driven workflows. [`MIT`](https://github.com/jesseduffield/lazygit) · [website](https://github.com/jesseduffield/lazygit)
+- **[tmux](https://github.com/tmux/tmux)** — Terminal multiplexer: sessions, windows, panes that survive disconnects. [`ISC`](https://github.com/tmux/tmux) · [website](https://github.com/tmux/tmux)
 
-## Audio tools
+## 📝 Notes & Knowledge
 
-- [Background Music](https://github.com/kyleneideck/BackgroundMusic) — ✅ verified. macOS audio utility: per-app volumes, auto-pause, and system-audio recording. License: `GPL-2.0-only`. ★ ~19.3k.
-- [BlackHole](https://github.com/ExistentialAudio/BlackHole) — ✅ verified. Modern macOS virtual audio loopback driver with zero additional latency. (Source GPL-3.0; official compiled binaries and branding carry separate restrictions.). License: `GPL-3.0-only`. ★ ~19.8k.
-- [eqMac](https://github.com/bitgapp/eqMac) — ✅ verified. System-wide audio equalizer and volume mixer for macOS. (Only the older free codebase is public; newer releases use a private fork.). License: `Apache-2.0`. ★ ~6.8k. [Official site](https://eqmac.app)
-- [SwitchAudioSource](https://github.com/deweller/switchaudio-osx) — ✅ verified. Change the macOS audio source from the command line. License: `MIT`. ★ ~1.4k.
+Note-taking, PKM, and outliners.
 
-## Streaming & capture
+- **[Logseq](https://github.com/logseq/logseq)** — Privacy-first, local-first outliner and knowledge graph. [`AGPL-3.0`](https://github.com/logseq/logseq) · [website](https://logseq.com)
+- **[Joplin](https://github.com/laurent22/joplin)** — Markdown notes with end-to-end encrypted sync across devices. [`AGPL-3.0`](https://github.com/laurent22/joplin/blob/HEAD/LICENSE) · [website](https://joplinapp.org)
+- **[Standard Notes](https://github.com/standardnotes/app)** — Encrypted, long-lived notes app. [`AGPL-3.0`](https://github.com/standardnotes/app) · [website](https://standardnotes.com)
+- **[Trilium Notes](https://github.com/TriliumNext/Trilium)** — Hierarchical notes with scripting and self-hosted sync. [`AGPL-3.0`](https://github.com/TriliumNext/Trilium) · [website](https://github.com/TriliumNext/Trilium)
+- **[SiYuan](https://github.com/siyuan-note/siyuan)** — Local-first personal knowledge base with block editing. [`AGPL-3.0`](https://github.com/siyuan-note/siyuan) · [website](https://b3log.org/siyuan)
+- **[AppFlowy](https://github.com/AppFlowy-IO/AppFlowy)** — Open-source Notion alternative: notes, wikis, projects. [`AGPL-3.0`](https://github.com/AppFlowy-IO/AppFlowy) · [website](https://appflowy.com)
 
-- [OBS Studio](https://github.com/obsproject/obs-studio) — ✅ verified. Free and open-source software for live streaming and screen recording. License: `GPL-2.0-only`. ★ ~76.8k. [Official site](https://obsproject.com)
+## 💬 Communication
 
-## System utilities
+Chat, email, and messaging clients.
 
-- [Hammerspoon](https://github.com/Hammerspoon/hammerspoon) — ✅ verified. Staggeringly powerful macOS desktop automation with Lua. License: `MIT`. ★ ~16.2k. [Official site](http://www.hammerspoon.org)
-- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake) — ✅ verified. Menu-bar utility that prevents your Mac from going to sleep. License: `MIT`. ★ ~6.9k. [Official site](https://keepingyouawake.app)
-- [MonitorControl](https://github.com/MonitorControl/MonitorControl) — ✅ verified. Control external display brightness and volume as if it were a native Apple display. License: `MIT`. ★ ~34.4k. [Official site](https://monitorcontrol.app)
-- [OpenInTerminal](https://github.com/Ji4n1ng/OpenInTerminal) — ✅ verified. Finder toolbar app to open the current directory in Terminal, iTerm, or Alacritty. License: `MIT`. ★ ~7k.
+- **[Element](https://github.com/element-hq/element-desktop)** *(maintenance)* — Matrix chat client with E2E encryption and bridging. [`AGPL-3.0`](https://github.com/element-hq/element-desktop) · [website](https://element.io)
+- **[Signal](https://github.com/signalapp/Signal-Desktop)** — Private messenger with E2E encryption by default. [`AGPL-3.0`](https://github.com/signalapp/Signal-Desktop) · [website](https://signal.org/download)
+- **[Telegram Desktop](https://github.com/telegramdesktop/tdesktop)** — Fast multi-device messenger with channels and bots. [`GPL-3.0`](https://github.com/telegramdesktop/tdesktop) · [website](https://desktop.telegram.org/)
+- **[Zulip](https://github.com/zulip/zulip-desktop)** — Threaded team chat for organized async conversation. [`Apache-2.0`](https://github.com/zulip/zulip-desktop) · [website](https://zulip.com/apps)
+- **[Mailspring](https://github.com/Foundry376/Mailspring)** — Fast, extensible email client with unified inbox. [`GPL-3.0`](https://github.com/Foundry376/Mailspring) · [website](https://getmailspring.com/)
+- **[Session](https://github.com/oxen-io/session-desktop)** *(maintenance)* — Decentralized private messenger; onion routing, no phone number. [`GPL-3.0`](https://github.com/oxen-io/session-desktop) · [website](https://getsession.org)
 
-## Menu bar tools
+## 🌐 Browsers
 
-- [Hidden Bar](https://github.com/dwarvesf/hidden) — ✅ verified. Ultra-light utility that hides menu-bar icons. License: `MIT`. ★ ~15k. [Official site](https://d.foundation/opensource)
-- [Ice](https://github.com/jordanbaird/Ice) — ✅ verified. Powerful menu-bar manager for macOS. License: `GPL-3.0-only`. ★ ~29.7k. [Official site](https://icemenubar.app)
-- [Itsycal](https://github.com/sfsam/Itsycal) — ✅ verified. Tiny calendar for your Mac's menu bar. License: `MIT`. ★ ~4k.
-- [MeetingBar](https://github.com/leits/MeetingBar) — ✅ verified. Your meetings at your fingertips in the macOS menu bar. License: `Apache-2.0`. ★ ~5.4k. [Official site](https://meetingbar.app)
-- [Stats](https://github.com/exelban/stats) — ✅ verified. macOS system monitor in your menu bar. License: `MIT`. ★ ~42.2k. [Official site](https://mac-stats.com)
-- [SwiftBar](https://github.com/swiftbar/SwiftBar) — ✅ verified. Powerful macOS menu-bar customization tool. License: `MIT`. ★ ~4.6k. [Official site](https://swiftbar.app)
+Web browsers for every philosophy.
 
-## Backup & sync
+- **[Firefox](https://github.com/mozilla-firefox/firefox)** — Mozilla's independent Gecko-based browser. [`MPL-2.0`](https://github.com/mozilla-firefox/firefox/blob/HEAD/LICENSE) · [website](https://www.firefox.com)
+- **[Chromium](https://github.com/chromium/chromium)** — Open-source base of Chrome, without Google branding. [`BSD-3-Clause`](https://github.com/chromium/chromium) · [website](https://www.chromium.org/Home)
+- **[Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium)** — Chromium stripped of Google integration and tracking. [`BSD-3-Clause`](https://github.com/ungoogled-software/ungoogled-chromium) · [website](https://github.com/ungoogled-software/ungoogled-chromium)
+- **[Brave](https://github.com/brave/brave-browser)** — Chromium-based browser with built-in ad blocking. [`MPL-2.0`](https://github.com/brave/brave-browser) · [website](https://brave.com)
+- **[Zen Browser](https://github.com/zen-browser/desktop)** — Firefox-based browser with a modern, customizable UI. [`MPL-2.0`](https://github.com/zen-browser/desktop) · [website](https://zen-browser.app)
+- **[qutebrowser](https://github.com/qutebrowser/qutebrowser)** — Keyboard-driven, Vim-like minimal browser. [`GPL-3.0`](https://github.com/qutebrowser/qutebrowser) · [website](https://www.qutebrowser.org/)
 
-- [Duplicati](https://github.com/duplicati/duplicati) — ✅ verified. Store securely encrypted backups in the cloud. License: `MIT`. ★ ~15k.
-- [Mackup](https://github.com/lra/mackup) — ✅ verified. Backup and keep your application settings in sync. License: `GPL-3.0-only`. ★ ~15.3k.
-- [rclone](https://github.com/rclone/rclone) — ✅ verified. "rsync for cloud storage": sync files with S3, Google Drive, Dropbox, and dozens more. License: `MIT`. ★ ~60k. [Official site](https://rclone.org)
-- [Syncthing](https://github.com/syncthing/syncthing) — ✅ verified. Open-source continuous file synchronization. License: `MPL-2.0`. ★ ~89k. [Official site](https://syncthing.net/)
+## Notable exclusions
 
-## Security
+Popular Mac apps deliberately left out because they are not open source, even though they are free or beloved:
 
-- [Bitwarden](https://github.com/bitwarden/clients) — ✅ verified. Open-source password manager clients (desktop, web, browser, CLI). (Core clients GPL-3.0; some directories under the separate Bitwarden License.). License: `GPL-3.0-only`. ★ ~13.9k. [Official site](https://bitwarden.com)
-- [BlockBlock](https://github.com/objective-see/BlockBlock) — ✅ verified. Monitors persistence locations to block malware persistence. License: `GPL-3.0-only`. ★ ~852.
-- [KnockKnock](https://github.com/objective-see/KnockKnock) — ✅ verified. See what's persistently installed on your Mac, like AutoRuns but for macOS. License: `GPL-3.0-only`. ★ ~800. [Official site](https://objective-see.org/products/knockknock.html)
-- [LuLu](https://github.com/objective-see/LuLu) — ✅ verified. Free, open-source macOS firewall by Objective-See. License: `GPL-3.0-only`. ★ ~13.3k. [Official site](https://objective-see.org/products/lulu.html)
-- [MacPass](https://github.com/mstarke/MacPass) — ✅ verified. Native macOS KeePass-compatible password manager. License: `GPL-3.0-or-later`. ★ ~6.9k. [Official site](http://macpass.app/)
-- [OverSight](https://github.com/objective-see/OverSight) — ✅ verified. Monitors your Mac's mic and webcam, alerting you when they are accessed. License: `GPL-3.0-only`. ★ ~680.
-- [Santa](https://github.com/google/santa) — ✅ verified. Binary authorization and monitoring system for macOS. (Archived by Google in 2025.). License: `Apache-2.0`. ★ ~4.5k. [Official site](https://santa.dev)
+- **Raycast, Alfred, Bartender, Magnet, CleanShot X, Shottr, BetterTouchTool, AppCleaner, OnyX** — proprietary freeware.
+- **1Password, Obsidian, Notion, Warp, Arc, Vivaldi, Little Snitch** — proprietary.
+- **Keka** — closed-source since 1.0, per its own README.
+- **Mos** — license changed to CC BY-NC 4.0 (non-commercial, not open source).
+- **Mac Mouse Fix** — custom license forbidding charging for derived programs (non-commercial).
+- **Pearcleaner** — Apache-2.0 plus Commons Clause (source-available, not OSI open source).
+- **Anytype** — Any Source Available License 1.0 (source-available, not OSI open source).
+- **eqMac** — original project went proprietary (eqMac Pro); only stale forks remain.
 
-## Productivity
+## Docs
 
-- [Joplin](https://github.com/laurent22/joplin) — ✅ verified. Privacy-focused note-taking app with sync across desktop and mobile. License: `AGPL-3.0-or-later`. ★ ~56.5k. [Official site](https://joplinapp.org)
-- [Logseq](https://github.com/logseq/logseq) — ✅ verified. Privacy-first, open-source platform for knowledge management. License: `AGPL-3.0-only`. ★ ~45.1k. [Official site](https://logseq.com)
-- [Standard Notes](https://github.com/standardnotes/app) — ✅ verified. End-to-end encrypted notes app. License: `AGPL-3.0-only`. ★ ~6.6k. [Official site](https://standardnotes.com)
-- [Stretchly](https://github.com/hovancik/stretchly) — ✅ verified. Break-time reminder app. License: `BSD-2-Clause`. ★ ~6.6k. [Official site](https://hovancik.net/stretchly)
-- [Super Productivity](https://github.com/johannesjo/super-productivity) — ✅ verified. Advanced todo list with timeboxing, time tracking, and Jira/GitHub integrations. License: `MIT`. ★ ~22.4k. [Official site](http://super-productivity.com?ref=github)
-- [Zettlr](https://github.com/Zettlr/Zettlr) — ✅ verified. One-stop publication workbench for writers and researchers. License: `GPL-3.0-only`. ★ ~13.6k. [Official site](https://www.zettlr.com)
-
-## Accessibility
-
-- [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements) — ✅ verified. Powerful keyboard customization for macOS. License: `Unlicense`. ★ ~22.9k. [Official site](https://karabiner-elements.pqrs.org/)
-- [KeyCastr](https://github.com/keycastr/keycastr) — ✅ verified. Open-source keystroke visualizer for macOS. License: `BSD-3-Clause`. ★ ~15.1k.
-- [LinearMouse](https://github.com/linearmouse/linearmouse) — ✅ verified. Mouse and trackpad utility for Mac: per-device scrolling, acceleration, and buttons. License: `MIT`. ★ ~6.9k. [Official site](https://linearmouse.app)
-- [Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser) — ✅ verified. Reverse scroll direction independently per device (mouse vs. trackpad). License: `Apache-2.0`. ★ ~3.6k. [Official site](https://pilotmoon.com/scrollreverser/)
-
-## Browsers
-
-- [Brave](https://github.com/brave/brave-browser) — ✅ verified. Privacy-focused browser with built-in ad blocking. License: `MPL-2.0`. ★ ~23.8k. [Official site](https://brave.com)
-- [Chromium](https://github.com/chromium/chromium) — ✅ verified. Open-source browser project behind Chrome, Edge, Brave, and others. License: `BSD-3-Clause`. ★ ~24.9k. [Official site](https://chromium.googlesource.com/chromium/src/)
-- [Firefox](https://github.com/mozilla-firefox/firefox) — ✅ verified. Mozilla's official open-source web browser. License: `MPL-2.0`. ★ ~13.3k. [Official site](https://www.firefox.com/)
-- [Floorp](https://github.com/Floorp-Projects/Floorp) — ✅ verified. Advanced, customizable Firefox derivative. License: `MPL-2.0`. ★ ~8.4k. [Official site](https://floorp.app)
-- [Min](https://github.com/minbrowser/min) — ✅ verified. Fast, minimal browser that protects your privacy. License: `Apache-2.0`. ★ ~9.2k. [Official site](https://minbrowser.org/)
-- [qutebrowser](https://github.com/qutebrowser/qutebrowser) — ✅ verified. Keyboard-driven, vim-like browser based on Python and Qt. License: `GPL-3.0-only`. ★ ~11.7k. [Official site](https://www.qutebrowser.org/)
-- [Zen Browser](https://github.com/zen-browser/desktop) — ✅ verified. Firefox-based browser aiming for a calmer internet. License: `MPL-2.0`. ★ ~44.7k. [Official site](https://zen-browser.app)
-
-## Miscellaneous
-
-- [AltStore](https://github.com/rileytestut/AltStore) — ✅ verified. Alternative app store for non-jailbroken iOS devices. License: `AGPL-3.0-only`. ★ ~14.5k. [Official site](https://altstore.io)
-- [Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher) — ✅ verified. Games launcher for GOG, Amazon, and Epic Games on Linux, Windows, and macOS. License: `GPL-3.0-only`. ★ ~12.3k. [Official site](https://heroicgameslauncher.com)
-- [Latest](https://github.com/mangerlahn/Latest) — ✅ verified. Small utility that notifies you about updates to the apps you use. License: `GPL-3.0-only`. ★ ~4.8k. [Official site](https://max.codes/latest)
-- [OpenMTP](https://github.com/ganeshrvel/openMTP) — ✅ verified. Advanced Android file-transfer application for macOS. License: `MIT`. ★ ~7.4k. [Official site](https://openmtp.ganeshrvel.com)
-- [SwiftDefaultApps](https://github.com/Lord-Kamina/SwiftDefaultApps) — ✅ verified. Modern replacement for RCDefaultApp: manage default apps and file associations via a preference pane. License: `Beerware`. ★ ~1.7k.
-- [Whisky](https://github.com/Whisky-App/Whisky) — ✅ verified. Modern Wine wrapper for macOS built with SwiftUI. (Archived; development discontinued in 2025.). License: `GPL-3.0-only`. ★ ~15.1k. [Official site](https://getwhisky.app)
-
-## Guides
-
-- [Choosing an open-source macOS app](docs/choosing-an-oss-macos-app.md) — what "open" covers, matching tools to jobs, Apple Silicon notes
-- [Glossary](docs/glossary.md) — universal binaries, SIP, notarization, Gatekeeper, Homebrew terms, license families
-- [Status changes](docs/status-changes.md) — license changes, archival, renames, retirements
-
-## Related repositories
-
-- [awesome](https://github.com/sindresorhus/awesome) — the canonical awesome list
-- [Awesome-llms-labs](https://github.com/awesome-llms-labs) — sibling awesome-lists by the same author (LLM-focused)
+- [Choosing an OSS macOS app](docs/choosing-an-oss-macos-app.md)
+- [macOS native vs Electron](docs/macos-native-vs-electron.md)
+- [Licenses explained](docs/licenses-explained.md)
+- [Glossary](docs/glossary.md)
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). The honesty policy is the whole point: if the official page is ambiguous, the entry says so.
+See [CONTRIBUTING.md](CONTRIBUTING.md). New entries must be open-source licensed, buildable/runnable on macOS, and verifiable via a public Git repository.
 
 ## License
 
-This list is [MIT](LICENSE) © 2026 Aaron Cross. The listed projects keep their own licenses — check each entry's `license` field.
+This list is MIT licensed — see [LICENSE](LICENSE).

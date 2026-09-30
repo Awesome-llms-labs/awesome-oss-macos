@@ -25,43 +25,41 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate macos.json
+      - name: Validate oss-macos.json
         run: |
           python3 - <<'EOF'
           import json
 
-          required = {"name", "description", "license", "category",
-                      "github_url", "stars", "official_site",
-                      "apple_silicon", "verified", "verified_source",
-                      "unverified_reason"}
-          categories = {"window-management", "launcher", "clipboard",
-                        "screenshot-recording", "terminal", "editor-ide",
-                        "dev-tools", "package-scripting", "media-player",
-                        "media-tools", "audio", "streaming",
-                        "system-utility", "archiver", "cleaner", "menu-bar",
-                        "backup-sync", "security", "productivity",
-                        "accessibility", "browser", "misc"}
+          required = {"name", "repo_url", "homepage", "description",
+                      "license", "category", "macos_native",
+                      "last_commit_verified", "oss_verified",
+                      "source_url", "status"}
+          statuses = {"active", "maintenance", "archived"}
+          categories = {"developer-tools", "productivity", "utilities",
+                        "media", "design", "security-privacy",
+                        "terminal-system", "notes-knowledge",
+                        "communication", "browsers"}
 
-          data = json.load(open("data/macos.json"))
-          assert isinstance(data, list) and data, "macos.json must be a non-empty list"
+          data = json.load(open("data/oss-macos.json"))
+          assert isinstance(data, list) and data, "oss-macos.json must be a non-empty list"
           for i, e in enumerate(data):
               missing = required - e.keys()
               assert not missing, f"entry {i} ({e.get('name')}) missing {missing}"
               assert e["category"] in categories, f"entry {i} bad category {e['category']}"
-              assert isinstance(e["verified"], bool), f"entry {i} verified not bool"
-              assert e["github_url"].startswith("https://github.com/"), \
-                  f"entry {i} github_url must be a https://github.com/ URL"
-              assert e["stars"] is None or isinstance(e["stars"], int), \
-                  f"entry {i} stars must be int or null"
-              if e["verified"]:
-                  assert e["verified_source"].startswith("https://"), \
-                      f"entry {i} verified entry needs https verified_source"
-              else:
-                  assert e["unverified_reason"], \
-                      f"entry {i} unverified entry needs unverified_reason"
+              assert e["status"] in statuses, f"entry {i} bad status {e['status']}"
+              assert isinstance(e["oss_verified"], bool), f"entry {i} oss_verified not bool"
+              assert isinstance(e["last_commit_verified"], bool), f"entry {i} last_commit_verified not bool"
+              assert isinstance(e["macos_native"], bool), f"entry {i} macos_native not bool"
+              assert e["repo_url"].startswith("https://github.com/"), \
+                  f"entry {i} repo_url must be https://github.com/..."
+              if e["homepage"]:
+                  assert e["homepage"].startswith("https://"), f"entry {i} homepage must be https"
+              if e["oss_verified"]:
+                  assert e["source_url"].startswith("https://"), \
+                      f"entry {i} verified entry needs https source_url"
+                  assert e["license"] != "unverified", \
+                      f"entry {i} verified entry must name a license"
           names = [e["name"] for e in data]
           assert len(names) == len(set(names)), "duplicate names"
-          verified = sum(1 for e in data if e["verified"])
-          print(f"OK: data/macos.json: {len(data)} entries validated "
-                f"({verified} verified, {len(data) - verified} unverified)")
+          print(f"OK: data/oss-macos.json: {len(data)} entries validated")
           EOF
