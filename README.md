@@ -39,7 +39,7 @@ Editors, package managers, database GUIs, and dev utilities.
 - **[TextMate](https://github.com/textmate/textmate)** 🍎 — Graphical text editor for macOS. [`GPL-3.0`](https://github.com/textmate/textmate/blob/master/LICENSE) · [website](https://macromates.com/)
 - **[Bruno](https://github.com/usebruno/bruno)** — Open-source IDE for exploring and testing APIs; lightweight Postman/Insomnia alternative. [`MIT`](https://github.com/usebruno/bruno/blob/main/license.md) · [website](https://www.usebruno.com/)
 - **[Boop](https://github.com/IvanMathy/Boop)** 🍎 — Scriptable scratchpad for developers. [`MIT`](https://github.com/IvanMathy/Boop/blob/main/LICENSE) · [website](https://boop.okat.best)
-- **[Platypus](https://github.com/sveinbjornt/Platypus)** 🍎 — Create native macOS applications from command-line scripts. [`BSD-3-Clause`](https://github.com/sveinbjornt/Platypus/blob/HEAD/LICENSE) · [website](https://sveinbjorn.org/platypus)
+- **[Platypus](https://github.com/sveinbjornt/Platypus)** 🍎 — Create native macOS applications from command-line scripts. [`BSD-3-Clause`](https://github.com/sveinbjornt/Platypus/blob/HEAD/LICENSE.txt) · [website](https://sveinbjorn.org/platypus)
 - **[MacPorts](https://github.com/macports/macports-base)** 🍎 — Package manager providing a large collection of open-source ports for macOS. [`BSD-3-Clause`](https://github.com/macports/macports-base/blob/master/LICENSE) · [website](https://www.macports.org/)
 - **[mas](https://github.com/mas-cli/mas)** 🍎 — Mac App Store command-line interface. [`MIT`](https://github.com/mas-cli/mas/blob/main/LICENSE) · [website](https://github.com/mas-cli/mas)
 - **[nix-darwin](https://github.com/LnL7/nix-darwin)** 🍎 — Manage your macOS system configuration using Nix. [`MIT`](https://github.com/nix-darwin/nix-darwin/blob/master/LICENSE) · [website](https://nix-darwin.org)
@@ -58,7 +58,7 @@ Window management, clipboard managers, automation, and text expansion.
 - **[AeroSpace](https://github.com/nikitabobko/AeroSpace)** 🍎 — i3-like tiling window manager for macOS. [`MIT`](https://github.com/nikitabobko/AeroSpace/blob/main/LICENSE.txt) · [website](https://nikitabobko.github.io/AeroSpace/guide)
 - **[Cerebro](https://github.com/cerebroapp/cerebro)** — Open-source launcher to improve productivity and efficiency. [`MIT`](https://github.com/cerebroapp/cerebro/blob/master/LICENSE) · [website](https://www.cerebroapp.com/)
 - **[CopyQ](https://github.com/hluk/copyq)** — Clipboard manager with advanced features. [`GPL-3.0`](https://github.com/hluk/CopyQ/blob/master/LICENSE) · [website](https://github.com/hluk/copyq)
-- **[Super Productivity](https://github.com/johannesjo/super-productivity)** — Advanced todo list with timeboxing, time tracking, and Jira/GitHub integrations. [`MIT`](https://github.com/super-productivity/super-productivity/blob/master/LICENSE) · [website](http://super-productivity.com?ref=github)
+- **[Super Productivity](https://github.com/johannesjo/super-productivity)** — Advanced todo list with timeboxing, time tracking, and Jira/GitHub integrations. [`MIT`](https://github.com/super-productivity/super-productivity/blob/master/LICENSE) · [website](https://super-productivity.com)
 - **[Stretchly](https://github.com/hovancik/stretchly)** — Break-time reminder app. [`BSD-2-Clause`](https://github.com/hovancik/stretchly/blob/trunk/LICENSE) · [website](https://hovancik.net/stretchly)
 
 ## 🧰 Utilities
@@ -138,7 +138,7 @@ Password managers, firewalls, and system integrity tools.
 - **[Wireshark](https://github.com/wireshark/wireshark)** — Network protocol analyzer for deep packet inspection. [`GPL-2.0`](https://github.com/wireshark/wireshark) · [website](https://www.wireshark.org)
 - **[WireGuard](https://github.com/WireGuard/wireguard-apple)** 🍎 *(maintenance)* — Fast, modern VPN protocol with an official Apple-platform app. [`MIT`](https://github.com/WireGuard/wireguard-apple) · [website](https://www.wireguard.com)
 - **[OverSight](https://github.com/objective-see/OverSight)** 🍎 — Monitors your Mac's mic and webcam, alerting you when they are accessed. [`GPL-3.0`](https://github.com/objective-see/OverSight/blob/main/LICENSE.md) · [website](https://github.com/objective-see/OverSight)
-- **[MacPass](https://github.com/mstarke/MacPass)** 🍎 — Native macOS KeePass-compatible password manager. [`GPL-3.0`](https://github.com/mstarke/MacPass/blob/master/LICENSE.txt) · [website](http://macpass.app/)
+- **[MacPass](https://github.com/mstarke/MacPass)** 🍎 — Native macOS KeePass-compatible password manager. [`GPL-3.0`](https://github.com/mstarke/MacPass/blob/master/LICENSE.txt) · [website](https://macpass.app/)
 
 ## 💻 Terminal & System
 
