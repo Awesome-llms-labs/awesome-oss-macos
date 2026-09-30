@@ -19,6 +19,7 @@ A curated list of **80 open-source macOS applications** — native Mac apps plus
 - [💬 Communication](#communication) (6)
 - [🌐 Browsers](#browsers) (6)
 - [Notable exclusions](#notable-exclusions)
+- [Documentation](#documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -165,7 +166,7 @@ Popular Mac apps deliberately left out because they are not open source, even th
 - **Anytype** — Any Source Available License 1.0 (source-available, not OSI open source).
 - **eqMac** — original project went proprietary (eqMac Pro); only stale forks remain.
 
-## Docs
+## Documentation
 
 - [Choosing an OSS macOS app](docs/choosing-an-oss-macos-app.md)
 - [macOS native vs Electron](docs/macos-native-vs-electron.md)
