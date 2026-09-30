@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   pull_request:
+  schedule:
+    - cron: '0 7 1 * *'  # monthly link-rot check
 
 jobs:
   links:
@@ -63,3 +65,4 @@ jobs:
           assert len(names) == len(set(names)), "duplicate names"
           print(f"OK: data/oss-macos.json: {len(data)} entries validated")
           EOF
+
