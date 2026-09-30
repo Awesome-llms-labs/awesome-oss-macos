@@ -1,0 +1,15 @@
+# lychee link-checker config
+# Pre-emptive excludes for sites known to block automated checks.
+# NOTE: exclude entries are regexes — use domain-bare patterns (no scheme/path)
+# so they cover www. and subdomains.
+exclude = [
+  "twitter\\.com",
+  "x\\.com",
+  "linkedin\\.com",
+  "facebook\\.com",
+  "instagram\\.com",
+  "medium\\.com",  # 403 to automated checks; live for humans
+]
+# Be lenient with rate-limited hosts; retry before failing.
+max_retries = 3
+timeout = 30
