@@ -1571,5 +1571,18 @@
     "oss_verified": true,
     "source_url": "https://github.com/minbrowser/min",
     "status": "active"
+  },
+  {
+    "name": "Glim",
+    "repo_url": "https://github.com/NeoPanic/Glim",
+    "homepage": "https://github.com/NeoPanic/Glim#download",
+    "description": "A macOS file viewer for Markdown, PDFs, images, JSON, CSV and source code in one workspace.",
+    "license": "MIT",
+    "category": "developer-tools",
+    "macos_native": false,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/NeoPanic/Glim/blob/main/LICENSE",
+    "status": "active"
   }
 ]

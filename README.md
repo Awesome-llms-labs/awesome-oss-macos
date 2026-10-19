@@ -1,14 +1,14 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **122 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and license-verification evidence is recorded alongside each project in the data catalog.
 
-- ✅ **121/121** licenses verified from official sources
+- ✅ **122/122** licenses verified from official sources
 - 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
 
-- [🛠️ Developer Tools](#developer-tools) (16)
+- [🛠️ Developer Tools](#developer-tools) (17)
 - [⚡ Productivity](#productivity) (12)
 - [🧰 Utilities](#utilities) (24)
 - [🎬 Media](#media) (17)
@@ -43,6 +43,7 @@ Editors, package managers, database GUIs, and dev utilities.
 - **[MacPorts](https://github.com/macports/macports-base)** 🍎 — Package manager providing a large collection of open-source ports for macOS. [`BSD-3-Clause`](https://github.com/macports/macports-base/blob/master/LICENSE) · [website](https://www.macports.org/)
 - **[mas](https://github.com/mas-cli/mas)** 🍎 — Mac App Store command-line interface. [`MIT`](https://github.com/mas-cli/mas/blob/main/LICENSE) · [website](https://github.com/mas-cli/mas)
 - **[nix-darwin](https://github.com/LnL7/nix-darwin)** 🍎 — Manage your macOS system configuration using Nix. [`MIT`](https://github.com/nix-darwin/nix-darwin/blob/master/LICENSE) · [website](https://nix-darwin.org)
+- **[Glim](https://github.com/NeoPanic/Glim)** — A macOS file viewer for Markdown, PDFs, images, JSON, CSV and source code in one workspace. [`MIT`](https://github.com/NeoPanic/Glim/blob/main/LICENSE) · [download](https://github.com/NeoPanic/Glim/releases/latest)
 
 ## ⚡ Productivity
 
