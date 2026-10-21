@@ -364,6 +364,19 @@
     "status": "active"
   },
   {
+    "name": "Cybokron Dock Groups",
+    "repo_url": "https://github.com/ercanatay/cybokron-dock-groups",
+    "homepage": "https://cybokron.com/dock-groups/",
+    "description": "Menu-bar app that groups apps and websites to open, hide, or close them together.",
+    "license": "MIT",
+    "category": "productivity",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ercanatay/cybokron-dock-groups/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "Stats",
     "repo_url": "https://github.com/exelban/stats",
     "homepage": "https://mac-stats.com",

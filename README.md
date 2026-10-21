@@ -1,15 +1,15 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **122 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
 
-- ✅ **121/121** licenses verified from official sources
-- 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
+- ✅ **122/122** licenses verified from official sources
+- 🍎 **49** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
 
 - [🛠️ Developer Tools](#developer-tools) (16)
-- [⚡ Productivity](#productivity) (12)
+- [⚡ Productivity](#productivity) (13)
 - [🧰 Utilities](#utilities) (24)
 - [🎬 Media](#media) (17)
 - [🎨 Design](#design) (8)
@@ -60,6 +60,7 @@ Window management, clipboard managers, automation, and text expansion.
 - **[CopyQ](https://github.com/hluk/copyq)** — Clipboard manager with advanced features. [`GPL-3.0`](https://github.com/hluk/CopyQ/blob/master/LICENSE) · [website](https://github.com/hluk/copyq)
 - **[Super Productivity](https://github.com/johannesjo/super-productivity)** — Advanced todo list with timeboxing, time tracking, and Jira/GitHub integrations. [`MIT`](https://github.com/super-productivity/super-productivity/blob/master/LICENSE) · [website](https://super-productivity.com)
 - **[Stretchly](https://github.com/hovancik/stretchly)** — Break-time reminder app. [`BSD-2-Clause`](https://github.com/hovancik/stretchly/blob/trunk/LICENSE) · [website](https://hovancik.net/stretchly)
+- **[Cybokron Dock Groups](https://github.com/ercanatay/cybokron-dock-groups)** 🍎 — Menu-bar app that groups apps and websites to open, hide, or close them together. [`MIT`](https://github.com/ercanatay/cybokron-dock-groups/blob/main/LICENSE) · [website](https://cybokron.com/dock-groups/)
 
 ## 🧰 Utilities
 
