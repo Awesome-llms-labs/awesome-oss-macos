@@ -9,7 +9,7 @@ A curated list of **121 open-source macOS applications** — native Mac apps plu
 ## Contents
 
 - [🛠️ Developer Tools](#developer-tools) (16)
-- [⚡ Productivity](#productivity) (12)
+- [⚡ Productivity](#productivity) (13)
 - [🧰 Utilities](#utilities) (24)
 - [🎬 Media](#media) (17)
 - [🎨 Design](#design) (8)
@@ -51,6 +51,7 @@ Window management, clipboard managers, automation, and text expansion.
 - **[Rectangle](https://github.com/rxhanson/Rectangle)** 🍎 — Move and resize windows with keyboard shortcuts and snap areas. [`MIT`](https://github.com/rxhanson/Rectangle/blob/HEAD/LICENSE) · [website](https://rectangleapp.com)
 - **[AltTab](https://github.com/lwouis/alt-tab-macos)** 🍎 — Windows-style Alt-Tab switcher with live window thumbnails. [`GPL-3.0`](https://github.com/lwouis/alt-tab-macos) · [website](https://alt-tab.app)
 - **[Loop](https://github.com/mrkai77/Loop)** 🍎 — Window management via a radial menu under your cursor. [`GPL-3.0`](https://github.com/mrkai77/Loop) · [website](https://github.com/mrkai77/Loop)
+- **[LayoutKeeper](https://github.com/tumingke0/LayoutKeeper)** 🍎 — Restores windows to their exact monitor, Space, and position when reconnecting external displays. [`GPL-3.0`](https://github.com/tumingke0/LayoutKeeper/blob/HEAD/LICENSE) · [website](https://github.com/tumingke0/LayoutKeeper)
 - **[Maccy](https://github.com/p0deje/Maccy)** 🍎 — Lightweight clipboard manager with search and keyboard-first paste. [`MIT`](https://github.com/p0deje/Maccy) · [website](https://maccy.app)
 - **[Flycut](https://github.com/TermiT/Flycut)** 🍎 — Simple open-source clipboard manager for developers. [`MIT`](https://github.com/TermiT/Flycut) · [website](https://github.com/TermiT/Flycut)
 - **[Espanso](https://github.com/espanso/espanso)** — Cross-platform text expander with snippets, forms, and scripting. [`GPL-3.0`](https://github.com/espanso/espanso) · [website](https://espanso.org)

@@ -1571,5 +1571,18 @@
     "oss_verified": true,
     "source_url": "https://github.com/minbrowser/min",
     "status": "active"
+  },
+  {
+    "name": "LayoutKeeper",
+    "repo_url": "https://github.com/tumingke0/LayoutKeeper",
+    "homepage": "https://github.com/tumingke0/LayoutKeeper",
+    "description": "Restores windows to their exact monitor, Space, and position when reconnecting external displays.",
+    "license": "GPL-3.0",
+    "category": "productivity",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/tumingke0/LayoutKeeper/blob/main/LICENSE",
+    "status": "active"
   }
 ]
