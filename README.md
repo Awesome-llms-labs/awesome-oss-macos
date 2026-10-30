@@ -1,8 +1,8 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **122 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata.
 
-- ✅ **121/121** licenses verified from official sources
+- ✅ **122/122** licenses verified from official sources
 - 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
@@ -14,7 +14,7 @@ A curated list of **121 open-source macOS applications** — native Mac apps plu
 - [🎬 Media](#media) (17)
 - [🎨 Design](#design) (8)
 - [🔒 Security & Privacy](#security-privacy) (10)
-- [💻 Terminal & System](#terminal-system) (13)
+- [💻 Terminal & System](#terminal-system) (14)
 - [📝 Notes & Knowledge](#notes-knowledge) (7)
 - [💬 Communication](#communication) (6)
 - [🌐 Browsers](#browsers) (8)
@@ -157,6 +157,8 @@ Terminals, shells, tiling window managers, and CLI power tools.
 - **[lazygit](https://github.com/jesseduffield/lazygit)** — Terminal UI for Git with keyboard-driven workflows. [`MIT`](https://github.com/jesseduffield/lazygit) · [website](https://github.com/jesseduffield/lazygit)
 - **[tmux](https://github.com/tmux/tmux)** — Terminal multiplexer: sessions, windows, panes that survive disconnects. [`ISC`](https://github.com/tmux/tmux) · [website](https://github.com/tmux/tmux)
 - **[Tabby](https://github.com/Eugeny/tabby)** — Modern, highly customizable terminal for the modern age. [`MIT`](https://github.com/Eugeny/tabby/blob/master/LICENSE) · [website](https://tabby.sh)
+
+- **[Kilobat CLI](https://github.com/seifip/kilobat-cli)** 🍎 — Network monitoring and diagnostics from the command line. [`GPL-3.0`](https://github.com/seifip/kilobat-cli/blob/main/LICENSE) · [website](https://kilobat.app)
 
 ## 📝 Notes & Knowledge
 

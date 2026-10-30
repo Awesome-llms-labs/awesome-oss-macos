@@ -1571,5 +1571,18 @@
     "oss_verified": true,
     "source_url": "https://github.com/minbrowser/min",
     "status": "active"
+  },
+  {
+    "name": "Kilobat CLI",
+    "repo_url": "https://github.com/seifip/kilobat-cli",
+    "homepage": "https://kilobat.app",
+    "description": "Network monitoring and diagnostics from the command line.",
+    "license": "GPL-3.0",
+    "category": "terminal-system",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/seifip/kilobat-cli/blob/main/LICENSE",
+    "status": "active"
   }
 ]
