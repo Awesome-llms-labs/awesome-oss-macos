@@ -1,9 +1,9 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **124 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and license sources were verified against the projects' official files or metadata (initial review: 2026-09-30; these three additions: 2026-11-03).
 
-- ✅ **121/121** licenses verified from official sources
-- 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
+- ✅ **124/124** licenses verified from official sources
+- 🍎 **51** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
@@ -11,8 +11,8 @@ A curated list of **121 open-source macOS applications** — native Mac apps plu
 - [🛠️ Developer Tools](#developer-tools) (16)
 - [⚡ Productivity](#productivity) (12)
 - [🧰 Utilities](#utilities) (24)
-- [🎬 Media](#media) (17)
-- [🎨 Design](#design) (8)
+- [🎬 Media](#media) (19)
+- [🎨 Design](#design) (9)
 - [🔒 Security & Privacy](#security-privacy) (10)
 - [💻 Terminal & System](#terminal-system) (13)
 - [📝 Notes & Knowledge](#notes-knowledge) (7)
@@ -111,6 +111,9 @@ Players, editors, converters, and audio/video tooling.
 - **[Background Music](https://github.com/kyleneideck/BackgroundMusic)** 🍎 — macOS audio utility: per-app volumes, auto-pause, and system-audio recording. [`GPL-2.0`](https://github.com/kyleneideck/BackgroundMusic/blob/master/LICENSE) · [website](https://github.com/kyleneideck/BackgroundMusic)
 - **[SwitchAudioSource](https://github.com/deweller/switchaudio-osx)** 🍎 — Change the macOS audio source from the command line. [`MIT`](https://github.com/deweller/switchaudio-osx/blob/master/license.txt) · [website](https://github.com/deweller/switchaudio-osx)
 - **[Heroic Games Launcher](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)** — Games launcher for GOG, Amazon, and Epic Games on Linux, Windows, and macOS. [`GPL-3.0`](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/main/COPYING) · [website](https://heroicgameslauncher.com)
+- **[ShotMap](https://github.com/ixiehao/ShotMap)** 🍎 — Native video storyboard generator with automatic and manual frame selection and PNG/JPG export. [`MIT`](https://github.com/ixiehao/ShotMap/blob/main/LICENSE) · [website](https://ixiehao.github.io/ShotMap/)
+- **[MP4Flow](https://github.com/ixiehao/MP4Flow)** 🍎 — Native FFmpeg front end for batch MP4 conversion, trimming, cropping, rotating, and merging. [`MIT`](https://github.com/ixiehao/MP4Flow/blob/main/LICENSE) · [website](https://ixiehao.github.io/MP4Flow/en/)
+
 
 ## 🎨 Design
 
@@ -124,6 +127,8 @@ Players, editors, converters, and audio/video tooling.
 - **[RawTherapee](https://github.com/RawTherapee/RawTherapee)** — Cross-platform RAW photo processor. [`GPL-3.0`](https://github.com/RawTherapee/RawTherapee) · [website](https://rawtherapee.com)
 - **[draw.io Desktop](https://github.com/jgraph/drawio-desktop)** — Offline diagramming and whiteboarding app. [`GPL-3.0`](https://github.com/jgraph/drawio-desktop) · [website](https://www.diagrams.net)
 - **[FreeCAD](https://github.com/FreeCAD/FreeCAD)** — Parametric 3D CAD modeler for product design and engineering. [`LGPL-2.1`](https://github.com/FreeCAD/FreeCAD) · [website](https://www.freecad.org)
+- **[LumaView](https://github.com/ixiehao/LumaView)** 🍎 — Native image viewer for folder browsing, EXIF inspection, and multipage PDFs. [`MIT`](https://github.com/ixiehao/LumaView/blob/main/LICENSE) · [website](https://ixiehao.github.io/LumaView/en/)
+
 
 ## 🔒 Security & Privacy
 

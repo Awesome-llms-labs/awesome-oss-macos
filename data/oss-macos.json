@@ -897,6 +897,32 @@
     "status": "active"
   },
   {
+    "name": "ShotMap",
+    "repo_url": "https://github.com/ixiehao/ShotMap",
+    "homepage": "https://ixiehao.github.io/ShotMap/",
+    "description": "Native video storyboard generator with automatic and manual frame selection and PNG/JPG export.",
+    "license": "MIT",
+    "category": "media",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ixiehao/ShotMap/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
+    "name": "MP4Flow",
+    "repo_url": "https://github.com/ixiehao/MP4Flow",
+    "homepage": "https://ixiehao.github.io/MP4Flow/en/",
+    "description": "Native FFmpeg front end for batch MP4 conversion, trimming, cropping, rotating, and merging.",
+    "license": "MIT",
+    "category": "media",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ixiehao/MP4Flow/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "Blender",
     "repo_url": "https://github.com/blender/blender",
     "homepage": "https://www.blender.org",
@@ -998,6 +1024,19 @@
     "last_commit_verified": true,
     "oss_verified": true,
     "source_url": "https://github.com/FreeCAD/FreeCAD",
+    "status": "active"
+  },
+  {
+    "name": "LumaView",
+    "repo_url": "https://github.com/ixiehao/LumaView",
+    "homepage": "https://ixiehao.github.io/LumaView/en/",
+    "description": "Native image viewer for folder browsing, EXIF inspection, and multipage PDFs.",
+    "license": "MIT",
+    "category": "design",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ixiehao/LumaView/blob/main/LICENSE",
     "status": "active"
   },
   {
