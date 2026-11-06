@@ -1131,6 +1131,19 @@
     "status": "active"
   },
   {
+    "name": "muty",
+    "repo_url": "https://github.com/degritsenko/muty",
+    "homepage": "",
+    "description": "Native SSH client with saved sessions and a two-pane SFTP browser over the same connection.",
+    "license": "Apache-2.0",
+    "category": "terminal-system",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/degritsenko/muty/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "iTerm2",
     "repo_url": "https://github.com/gnachman/iTerm2",
     "homepage": "https://iterm2.com/",
