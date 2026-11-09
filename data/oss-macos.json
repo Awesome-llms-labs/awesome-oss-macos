@@ -1300,6 +1300,19 @@
     "status": "active"
   },
   {
+    "name": "Cue",
+    "repo_url": "https://github.com/8starlabs/cue",
+    "homepage": "https://cue.8starlabs.com",
+    "description": "Open-source macOS terminal autocomplete for zsh in Apple Terminal and VS Code's integrated terminal.",
+    "license": "MIT",
+    "category": "terminal-system",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/8starlabs/cue/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "Logseq",
     "repo_url": "https://github.com/logseq/logseq",
     "homepage": "https://logseq.com",
