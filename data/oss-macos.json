@@ -1571,5 +1571,31 @@
     "oss_verified": true,
     "source_url": "https://github.com/minbrowser/min",
     "status": "active"
+  },
+  {
+    "name": "Any2WebP",
+    "repo_url": "https://github.com/ixiehao/Any2WebP",
+    "homepage": "https://ixiehao.github.io/Any2WebP/",
+    "description": "Batch convert images to WebP or GIF and create animations from stills or video clips.",
+    "license": "MIT",
+    "category": "media",
+    "macos_native": false,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ixiehao/Any2WebP/blob/HEAD/LICENSE",
+    "status": "active"
+  },
+  {
+    "name": "ezNTFS",
+    "repo_url": "https://github.com/ixiehao/ezNTFS",
+    "homepage": "https://ixiehao.github.io/ezNTFS/",
+    "description": "Mount external NTFS drives for read and write access with macFUSE and NTFS-3G.",
+    "license": "MIT",
+    "category": "terminal-system",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/ixiehao/ezNTFS/blob/HEAD/LICENSE",
+    "status": "active"
   }
 ]

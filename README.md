@@ -1,9 +1,9 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **123 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license has been verified against the project's official license file or metadata.
 
-- ✅ **121/121** licenses verified from official sources
-- 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
+- ✅ **123/123** licenses verified from official sources
+- 🍎 **49** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
@@ -11,10 +11,10 @@ A curated list of **121 open-source macOS applications** — native Mac apps plu
 - [🛠️ Developer Tools](#developer-tools) (16)
 - [⚡ Productivity](#productivity) (12)
 - [🧰 Utilities](#utilities) (24)
-- [🎬 Media](#media) (17)
+- [🎬 Media](#media) (18)
 - [🎨 Design](#design) (8)
 - [🔒 Security & Privacy](#security-privacy) (10)
-- [💻 Terminal & System](#terminal-system) (13)
+- [💻 Terminal & System](#terminal-system) (14)
 - [📝 Notes & Knowledge](#notes-knowledge) (7)
 - [💬 Communication](#communication) (6)
 - [🌐 Browsers](#browsers) (8)
@@ -107,6 +107,7 @@ Players, editors, converters, and audio/video tooling.
 - **[Shotcut](https://github.com/mltframework/shotcut)** — Cross-platform, open-source video editor. [`GPL-3.0`](https://github.com/mltframework/shotcut/blob/master/COPYING) · [website](https://www.shotcut.org)
 - **[Subler](https://github.com/sublerapp/subler)** 🍎 — MP4 muxer and metadata editor for macOS. [`GPL-2.0`](https://github.com/sublerapp/subler) · [website](https://subler.org)
 - **[Gifski](https://github.com/sindresorhus/Gifski)** 🍎 — Convert videos to high-quality GIFs on your Mac. [`MIT`](https://github.com/sindresorhus/Gifski/blob/main/license) · [website](https://sindresorhus.com/gifski)
+- **[Any2WebP](https://github.com/ixiehao/Any2WebP)** — Batch convert images to WebP or GIF and create animations from stills or video clips. [`MIT`](https://github.com/ixiehao/Any2WebP/blob/HEAD/LICENSE) · [website](https://ixiehao.github.io/Any2WebP/)
 - **[Picard](https://github.com/metabrainz/picard)** — Cross-platform music tagger powered by the MusicBrainz database. [`GPL-2.0`](https://github.com/metabrainz/picard/blob/master/COPYING.txt) · [website](https://picard.musicbrainz.org)
 - **[Background Music](https://github.com/kyleneideck/BackgroundMusic)** 🍎 — macOS audio utility: per-app volumes, auto-pause, and system-audio recording. [`GPL-2.0`](https://github.com/kyleneideck/BackgroundMusic/blob/master/LICENSE) · [website](https://github.com/kyleneideck/BackgroundMusic)
 - **[SwitchAudioSource](https://github.com/deweller/switchaudio-osx)** 🍎 — Change the macOS audio source from the command line. [`MIT`](https://github.com/deweller/switchaudio-osx/blob/master/license.txt) · [website](https://github.com/deweller/switchaudio-osx)
@@ -151,6 +152,7 @@ Terminals, shells, tiling window managers, and CLI power tools.
 - **[Ghostty](https://github.com/ghostty-org/ghostty)** — Fast native-feeling terminal focused on simplicity. [`MIT`](https://github.com/ghostty-org/ghostty) · [website](https://ghostty.org)
 - **[Yabai](https://github.com/asmvik/yabai)** 🍎 — Tiling window manager for macOS — scriptable and fast. [`MIT`](https://github.com/asmvik/yabai) · [website](https://github.com/asmvik/yabai)
 - **[Amethyst](https://github.com/ianyh/Amethyst)** 🍎 — Automatic tiling window manager with multiple layouts. [`MIT`](https://github.com/ianyh/Amethyst) · [website](https://ianyh.com/amethyst/)
+- **[ezNTFS](https://github.com/ixiehao/ezNTFS)** 🍎 — Mount external NTFS drives for read and write access with macFUSE and NTFS-3G. [`MIT`](https://github.com/ixiehao/ezNTFS/blob/HEAD/LICENSE) · [website](https://ixiehao.github.io/ezNTFS/)
 - **[Starship](https://github.com/starship/starship)** — Minimal, fast, customizable shell prompt for any shell. [`ISC`](https://github.com/starship/starship) · [website](https://starship.rs)
 - **[fzf](https://github.com/junegunn/fzf)** — Fuzzy finder for the command line: files, history, processes. [`MIT`](https://github.com/junegunn/fzf) · [website](https://junegunn.github.io/fzf/)
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** — Blazing-fast recursive search — a modern grep. [`Unlicense`](https://github.com/BurntSushi/ripgrep) · [website](https://github.com/BurntSushi/ripgrep)
