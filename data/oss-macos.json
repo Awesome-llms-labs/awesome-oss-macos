@@ -676,6 +676,19 @@
     "status": "active"
   },
   {
+    "name": "Pokelet",
+    "repo_url": "https://github.com/smcnab1/pokelet",
+    "homepage": "https://smcnab1.github.io/pokelet/",
+    "description": "Native animated cursor characters with click effects and optional sounds.",
+    "license": "MIT",
+    "category": "utilities",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/smcnab1/pokelet/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "IINA",
     "repo_url": "https://github.com/iina/iina",
     "homepage": "https://iina.io",
