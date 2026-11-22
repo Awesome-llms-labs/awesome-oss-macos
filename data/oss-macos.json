@@ -364,6 +364,19 @@
     "status": "active"
   },
   {
+    "name": "Talis",
+    "repo_url": "https://github.com/viowai/7viow-talis",
+    "homepage": "",
+    "description": "Native prompt editor with guided follow-up questions and reusable instruction templates.",
+    "license": "Apache-2.0",
+    "category": "productivity",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/viowai/7viow-talis/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "Stats",
     "repo_url": "https://github.com/exelban/stats",
     "homepage": "https://mac-stats.com",
