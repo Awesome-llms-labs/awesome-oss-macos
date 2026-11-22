@@ -1,16 +1,16 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **122 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata 
 
-- ✅ **121/121** licenses verified from official sources
-- 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
+- ✅ **122/122** licenses verified from official sources
+- 🍎 **49** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
 
 - [🛠️ Developer Tools](#developer-tools) (16)
 - [⚡ Productivity](#productivity) (12)
-- [🧰 Utilities](#utilities) (24)
+- [🧰 Utilities](#utilities) (25)
 - [🎬 Media](#media) (17)
 - [🎨 Design](#design) (8)
 - [🔒 Security & Privacy](#security-privacy) (10)
@@ -89,6 +89,8 @@ Menu-bar tools, system tweaks, input customization, and archivers.
 - **[Scroll Reverser](https://github.com/pilotmoon/Scroll-Reverser)** 🍎 — Reverse scroll direction independently per device (mouse vs. trackpad). [`Apache-2.0`](https://github.com/pilotmoon/Scroll-Reverser/blob/HEAD/LICENSE) · [website](https://pilotmoon.com/scrollreverser/)
 - **[Latest](https://github.com/mangerlahn/Latest)** 🍎 — Small utility that notifies you about updates to the apps you use. [`GPL-3.0`](https://github.com/mangerlahn/Latest/blob/main/LICENSE.md) · [website](https://max.codes/latest)
 - **[OpenMTP](https://github.com/ganeshrvel/openMTP)** — Advanced Android file-transfer application for macOS. [`MIT`](https://github.com/ganeshrvel/openmtp/blob/master/LICENSE) · [website](https://openmtp.ganeshrvel.com)
+
+- **[Pokelet](https://github.com/smcnab1/pokelet)** 🍎 — Native animated cursor characters with click effects and optional sounds. [`MIT`](https://github.com/smcnab1/pokelet/blob/main/LICENSE) · [website](https://smcnab1.github.io/pokelet/)
 
 ## 🎬 Media
 
