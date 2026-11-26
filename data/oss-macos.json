@@ -364,6 +364,19 @@
     "status": "active"
   },
   {
+    "name": "Open Contexts",
+    "repo_url": "https://github.com/zshnb/open-contexts",
+    "homepage": "https://opencontexts.app/",
+    "description": "Switch between individual Mac windows by title and save window groups.",
+    "license": "Apache-2.0",
+    "category": "productivity",
+    "macos_native": true,
+    "last_commit_verified": true,
+    "oss_verified": true,
+    "source_url": "https://github.com/zshnb/open-contexts/blob/main/LICENSE",
+    "status": "active"
+  },
+  {
     "name": "Stats",
     "repo_url": "https://github.com/exelban/stats",
     "homepage": "https://mac-stats.com",
