@@ -1,16 +1,16 @@
 # Awesome OSS macOS [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-A curated list of **121 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
+A curated list of **122 open-source macOS applications** — native Mac apps plus cross-platform tools where macOS is first-class. Every entry links to its source repository, and every license was verified against the project's official license file or metadata on 2026-09-30.
 
-- ✅ **121/121** licenses verified from official sources
-- 🍎 **48** native macOS apps (AppKit/Swift/Objective-C)
+- ✅ **122/122** licenses verified from official sources
+- 🍎 **49** native macOS apps (AppKit/Swift/Objective-C)
 - 📦 Machine-readable data in [`data/oss-macos.json`](data/oss-macos.json)
 
 ## Contents
 
 - [🛠️ Developer Tools](#developer-tools) (16)
 - [⚡ Productivity](#productivity) (12)
-- [🧰 Utilities](#utilities) (24)
+- [🧰 Utilities](#utilities) (25)
 - [🎬 Media](#media) (17)
 - [🎨 Design](#design) (8)
 - [🔒 Security & Privacy](#security-privacy) (10)
@@ -68,6 +68,7 @@ Menu-bar tools, system tweaks, input customization, and archivers.
 - **[Stats](https://github.com/exelban/stats)** 🍎 — Menu-bar system monitor: CPU, memory, disks, network, sensors, battery. [`MIT`](https://github.com/exelban/stats/blob/HEAD/LICENSE) · [website](https://mac-stats.com)
 - **[Hidden Bar](https://github.com/dwarvesf/hidden)** 🍎 — Hide menu-bar icons behind a toggleable separator. [`MIT`](https://github.com/dwarvesf/hidden) · [website](https://d.foundation/opensource)
 - **[Ice](https://github.com/jordanbaird/Ice)** 🍎 *(maintenance)* — Powerful menu-bar manager: hide icons, reorder, multiple bars. [`GPL-3.0`](https://github.com/jordanbaird/Ice) · [website](https://icemenubar.app)
+- **[CineNotch](https://github.com/NikOneZ1/cinenotch)** 🍎 — Docks Safari and Chrome Picture in Picture into the MacBook notch so the video isn't over your work. [`GPL-3.0`](https://github.com/NikOneZ1/cinenotch/blob/main/LICENSE) · [website](https://cinenotch.cam/?ref=awesome-oss-macos)
 - **[MonitorControl](https://github.com/MonitorControl/MonitorControl)** 🍎 — Control external display brightness/volume with native OSD. [`MIT`](https://github.com/MonitorControl/MonitorControl) · [website](https://monitorcontrol.app)
 - **[PeaZip](https://github.com/giorgiotani/PeaZip)** — Free archiver supporting 200+ formats, with encryption. [`LGPL-3.0`](https://github.com/giorgiotani/PeaZip) · [website](https://peazip.github.io)
 - **[LinearMouse](https://github.com/linearmouse/linearmouse)** 🍎 — Per-device mouse/trackpad customization: scroll, speed, buttons. [`MIT`](https://github.com/linearmouse/linearmouse) · [website](https://linearmouse.app)
